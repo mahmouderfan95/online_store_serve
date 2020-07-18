@@ -29,7 +29,7 @@
                                 <div class="card-body">
                                     <form class="form-horizontal form-simple" action="{{route('post_admin_Login')}}" method="POST"
                                           novalidate>
-                                          <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                          @csrf
                                         <fieldset class="form-group position-relative has-icon-left mb-0">
                                             <input type="text" name="email"
                                                    class="form-control form-control-lg input-lg"
@@ -49,7 +49,7 @@
                                             </div>
                                             <span class="text-danger"> </span>
                                         </fieldset>
-                                        <div class="form-group row">
+                                        {{-- <div class="form-group row">
                                             <div class="col-md-6 col-12 text-center text-md-left">
                                                 <fieldset>
                                                     <input type="checkbox" name="remember_me" id="remember-me"
@@ -57,7 +57,7 @@
                                                     <label for="remember-me">تذكر دخولي</label>
                                                 </fieldset>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <button type="submit" class="btn btn-info btn-lg btn-block"><i
                                                 class="ft-unlock"></i>
                                             دخول

@@ -1,16 +1,15 @@
 <?php
 use Illuminate\Support\Facades\Route;
-
-
 define('PAGINATION_COUNT',10);
 /* admin routes */
 Route::group(['middleware'=> 'guest:admin'],function(){
 	Route::get('/login','loginController@getLogin')->name('get_admin_Login');
-	Route::post('/login','loginController@postLogin')->name('post_admin_Login');
+    Route::post('/login','loginController@postLogin')->name('post_admin_Login');
 });
 
 Route::group(['middleware'=> 'auth:admin'],function(){
-	Route::get('/dashbord','dashbordController@index')->name('admin.dashbord');
+    Route::get('/dashbord','dashbordController@index')->name('admin.dashbord');
+    Route::get('/logout','loginController@logout')->name('admin.logout');
     /* ################ Begin languges routes ################## */
     Route::group(['prefix'=> 'languges'],function(){
         Route::get('/','langugesController@index')->name('languges.index');

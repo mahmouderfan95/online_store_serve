@@ -47,10 +47,10 @@
               </span>
             </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=""
+                    <li class="active"><a class="menu-item" href="{{route('mainCategory.index')}}"
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
+                    <li><a class="menu-item" href="{{route('mainCategory.create')}}" data-i18n="nav.dash.crypto">أضافة
                         قسم جديد </a>
                     </li>
                 </ul>

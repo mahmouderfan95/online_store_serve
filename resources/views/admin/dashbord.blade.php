@@ -90,7 +90,7 @@
             <!-- Candlestick Multi Level Control Chart -->
 
             <!-- Sell Orders & Buy Order -->
-            <div class="row match-height">
+            {{-- <div class="row match-height">
                 <div class="col-12 col-xl-6">
                     <div class="card">
                         <div class="card-header">
@@ -203,10 +203,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!--/ Sell Orders & Buy Order -->
             <!-- Active Orders -->
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Active Orders -->
         </div>
     </div>
